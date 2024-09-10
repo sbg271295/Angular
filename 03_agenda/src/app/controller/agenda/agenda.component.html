@@ -1,0 +1,27 @@
+<div class="formulario">
+  <div>
+      <label for="">Introduce nombre: </label>
+      <input type="text" [(ngModel)]="nombre"> <!-- ngModel para recoger datos de la vista al Controlador. -->
+      <br>
+      <br>
+      <label for="">Introduce edad: </label>
+      <input type="text" [(ngModel)]="edad">
+      <br>
+      <br>
+      <label for="">Introduce edad: </label>
+      <input type="text" [(ngModel)]="telefono">
+      <br>
+      <br>
+      <input type="button" value="Guardar" (click)="guardar()">
+      <br>
+      <br>
+      <br>
+      <table border="1" *ngIf="agenda.length>0">
+        <tr><th>Nombre</th><th>Edad</th><th>Teléfono</th></tr>
+        <tr *ngFor="let c of agenda">
+          <td>{{c.nombre}}</td><td>{{c.edad}}</td><td>{{c.telefono}}</td>
+        </tr>
+      </table>
+
+  </div>
+</div>

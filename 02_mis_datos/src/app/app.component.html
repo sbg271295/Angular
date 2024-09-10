@@ -1,0 +1,16 @@
+<div class="formulario">
+  <div>
+      <label for="">Introduce nombre: </label>
+      <input type="text" [(ngModel)]="nombre"> <!-- ngModel para recoger datos de la vista al Controlador. -->
+      <br>
+      <br>
+      <label for="">Introduce edad: </label>
+      <input type="text" [(ngModel)]="edad">
+      <br>
+      <br>
+      <input type="button" value="Mostrar" (click)="mostrar()">
+      <br>
+      <br>
+      {{texto}}
+  </div>
+</div>
