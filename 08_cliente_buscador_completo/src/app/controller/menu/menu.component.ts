@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-
+//yA COMO PASO FINAL TENEMOS UQE PASAR TODA NUESTRA APP ANGULAR
+//A JAVA SCRIPT;
 
 
 }
